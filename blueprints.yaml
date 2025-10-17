@@ -1,0 +1,26 @@
+name: ScriptSection
+version: 0.0.1
+description: Replace a markdown tag with the output of a php script
+icon: plug
+author:
+  name: Maloja
+  email: maloja
+homepage: https://github.com/maloja/grav-plugin-script-section
+keywords: grav, php, plugin, markdown
+bugs: https://github.com/maloja/grav-plugin-script-section/issues
+docs: https://github.com/maloja/grav-plugin-script-section/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
